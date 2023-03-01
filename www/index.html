@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8"/>
+    <title>Axis Core Construction</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Axis Core Construction" name="description"/>
+    <meta content="Axis Core Construction" name="author"/>
+
+    <!-- GLOBAL MANDATORY STYLES -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- PAGE LEVEL PLUGIN STYLES -->
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <!-- THEME STYLES -->
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Favicon todo change that-->
+    <link rel="shortcut icon" href="favicon.png"/>
+</head>
+<!-- END HEAD -->
+
+<!-- BODY -->
+<body style="width: 100%; height: auto">
+    <div class="position-fixed main-bg"></div>
+    <nav class="hidden-ondesktop navbar navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
+            <span class="text-black text-center display-4" style="font-family: 'Yeseva One', cursive;">Axis Core</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="col-xl-2 text-center border border-dark bg-white px-3 h-50">
+            <div class="row row-cols-1 justify-content-center gy-5">
+                <div class="col w-100">
+                    <img src="img/axis_core_logo.jpg" alt="Axis Core" class="img-fluid">
+                </div>
+                <div class="col mt-0" style="width: 90%">
+                    <div class="row row-cols-1 justify-content-center gy-2" id="group-btn-toggle2">
+                        <div class="col d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3 active" id="btn-main2">Головна</button>
+                        </div>
+                        <div class="col d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-projects2">Наші проекти</button>
+                        </div>
+                        <div class="col d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-products2">Продукція</button>
+                        </div>
+                        <div class="col d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-services2">Послуги</button>
+                        </div>
+                        <div class="col d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-partners2">Партнери</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12" style="font-size: 15px">
+                    <div class="row row-cols-1 justify-content-center gy-2">
+                        <div class="col-9 d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-mail2">Пошта</button>
+                        </div>
+                        <div class="col-9 d-grid gap-2 mx-auto">
+                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-phone2">Телефон</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pb-3">
+                    <div class="row justify-content-center gy-5">
+                        <div class="col-4">
+                            <a class="btn btn-outline-dark rounded-0 border-3" href="ru/index.html">Ru</a>
+                        </div>
+                        <div class="col-4">
+                            <a class="btn btn-outline-dark rounded-0 border-3" href="#">Ua</a>
+                        </div>
+                        <div class="col-4">
+                            <a class="btn btn-outline-dark rounded-0 border-3" href="en/index.html">En</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section style="width: 100%; height: auto" >
+        <div class="container" style="background: #3c4556de">
+            <div class="row">
+                <!-- MAIN COLUMN-->
+                <div class="col p-2 grand-margin">
+                    <div class="row justify-content-around">
+                        <!--LEFT BASE COLUMN -->
+                        <div class="col-12 col-xl-9 p-xl-1 p-4">
+                            <div class="row">
+                                <!--MAIN PART 1/5-->
+                                <div class="hideshow" id="main-part">
+                                    <div class="col g-4">
+                                        <div class="position-relative border border-1 border-light"> <!--BANNER-->
+                                            <img src="img/banner.jpg" alt="Banner" class="img-fluid">
+                                            <div class="position-absolute w-100 h-100 opacity-25" style="background: #000; left: 0; right: 0; top: 0; bottom: 0;"></div>
+                                            <div class="position-absolute w-100 h-100" style=": 0; right: 0; top: 0; bottom: 0;">
+                                                <div class="row w-100 h-100">
+                                                    <div class="col-xl-3"></div>
+                                                    <div class="col-xl-6 align-self-center" style="font-family: 'Yeseva One', cursive;">
+                                                        <h1 class="text-white text-center display-3">Axis Core</h1>
+                                                        <h3 class="text-secondary text-end text-uppercase"><span class="text-secondary text-bg-light"> c o n s t r u c t i o n </span></h3>
+                                                    </div>
+                                                    <div class="col-xl-3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row row-cols-1 mt-5 mx-auto bg-white border border-2 shadow-inner pb-2" style="font-size: 24px;">
+                                        <p class="col pb-3 pt-3" style="text-indent: 25px;">
+                                                ТОВ «Аксіс Кор» Україна м. Полтава, набула статусу надійної компанії в галузі будівництва та
+                                            інженерії, за плечима якої успішно завершені проекти з будівництва складних та сучасних
+                                            об'єктів на території України та інших країн.
+
+                                        </p>
+
+                                        <p class="col bg-white" style="text-indent: 25px;">
+                                                Досвід «Аксіс Кор» включає будівництво та проектування промислових об'єктів,
+                                            багатофункціональних будівель та комплексів та інших елементів, а також виконання
+                                            енергетичних проектів. Крім того, компанія «Аксіс Кор» надає послуги з менеджменту проектів.
+                                        </p>
+                                    </div>
+                                    <div class="row row-cols-1 row-cols-xl-2 mt-5 mx-auto bg-white border border-2">
+                                        <div class="col">
+                                            <div class="row row-cols-1 bg-white mx-auto  pt-3">
+                                                <div class="col">
+                                                    <p class="text-success">Адреса</p>
+                                                    <p>36000, м. Полтава, пр. Першотравневий, 19, к.32</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="text-success">Телефон</p>
+                                                    <p>(+38)-068-795-13-41</p>
+                                                    <p>(+38)-095-363-75-88</p>
+                                                    <p>(+38)-063-107-00-51</p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="text-success">Эл. пошта</p>
+                                                    <p>axiscore@ukr.net</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col px-0">
+                                            <div class="map" id="map" style="width:100%;height:400px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--PROJECTS PART 2/5-->
+                                <div class="hideshow" style="display: none" id="projects-part">
+                                    <div class="col g-4 h-100">
+                                        <div class="position-relative border border-1 border-light overflow-hidden" style="height: 125px;"> <!--BANNER-->
+                                            <img src="img/lil-banner.jpg" alt="Banner" class="img-fluid">
+                                            <div class="position-absolute w-100 h-100 opacity-25" style="background: #000; left: 0; right: 0; top: 0; bottom: 0;"></div>
+                                            <div class="position-absolute w-100 h-100" style=": 0; right: 0; top: 0; bottom: 0;">
+                                                <div class="row w-100 h-100">
+                                                    <div class="col-xl-3"></div>
+                                                    <div class="col-xl-6 align-self-center" style="font-family: 'Yeseva One', cursive;">
+                                                        <h1 class="text-white text-center display-3">Axis Core</h1>
+                                                        <h3 class="text-secondary text-end text-uppercase"><span class="text-secondary text-bg-light"> c o n s t r u c t i o n </span></h3>
+                                                    </div>
+                                                    <div class="col-xl-3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--PROJECTS SOURCE 1-->
+                                        <div class="hideshow-projects mt-3" id="projects-source-1">
+                                            <div class="row row-cols-1 row-cols-xl-3 g-4">
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Проект Бета</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Проект Бета</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Бета</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Бета</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Бета</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Бета</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--PROJECTS SOURCE 2-->
+                                        <div class="hideshow-projects mt-3" style="display: none" id="projects-source-2">
+                                            <div class="row row-cols-1 row-cols-xl-3 g-4">
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Проект Андрей</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Проект Андрей</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Андрей</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Андрей</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Андрей</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Андрей</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--PROJECTS SOURCE 3-->
+                                        <div class="hideshow-projects mt-3" style="display:none" id="projects-source-3">
+                                            <div class="row row-cols-1 row-cols-xl-3 g-4">
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Проект Гамма</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Проект Гамма</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Гамма</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Гамма</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Гамма</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body rounded-0">
+                                                            <h5 class="card-title text-center">Проект Гамма</h5>
+                                                            <img src="img/project-example.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--PROJECTS SOURCE TOGGLE-->
+                                        <div class="row justify-content-center text-center mt-3" id="group-ps-toggle">
+                                            <div class="col-1 mx-2">
+                                                <button class="btn btn-outline-dark btn-light rounded-0 border-3" id="projects-src-1">1</button>
+                                            </div>
+                                            <div class="col-1 mx-2">
+                                                <button class="btn btn-outline-dark btn-light rounded-0 border-3" id="projects-src-2">2</button>
+                                            </div>
+                                            <div class="col-1 mx-2">
+                                                <button class="btn btn-outline-dark btn-light rounded-0 border-3" id="projects-src-3">3</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--PRODUCTS PART 3/5-->
+                                <div class="hideshow" style="display: none" id="products-part">
+                                    <div class="col g-4 h-100">
+                                        <div class="position-relative border border-1 border-light overflow-hidden" style="height: 125px;"> <!--BANNER-->
+                                            <img src="img/lil-banner.jpg" alt="Banner" class="img-fluid">
+                                            <div class="position-absolute w-100 h-100 opacity-25" style="background: #000; left: 0; right: 0; top: 0; bottom: 0;"></div>
+                                            <div class="position-absolute w-100 h-100" style=": 0; right: 0; top: 0; bottom: 0;">
+                                                <div class="row w-100 h-100">
+                                                    <div class="col-xl-3"></div>
+                                                    <div class="col-xl-6 align-self-center" style="font-family: 'Yeseva One', cursive;">
+                                                        <h1 class="text-white text-center display-3">Axis Core</h1>
+                                                        <h3 class="text-secondary text-end text-uppercase"><span class="text-secondary text-bg-light"> c o n s t r u c t i o n </span></h3>
+                                                    </div>
+                                                    <div class="col-xl-3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-3">
+                                            <div class="row row-cols-1 row-cols-xl-3 g-3">
+                                                <div class="col">
+                                                    <div class="card w-100 rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Продукт Альфа</h5>
+                                                            <img src="img/lil-banner.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-outline-dark rounded-0 border-3 text-end float-end">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card w-100 rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Продукт Бета</h5>
+                                                            <img src="img/lil-banner.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-outline-dark rounded-0 border-3 text-end float-end">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card w-100 rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Продукт Бета</h5>
+                                                            <img src="img/lil-banner.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-outline-dark rounded-0 border-3 text-end float-end">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card w-100 rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Продукт Бета</h5>
+                                                            <img src="img/lil-banner.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-outline-dark rounded-0 border-3 text-end float-end">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card w-100 rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Продукт Бета</h5>
+                                                            <img src="img/lil-banner.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-outline-dark rounded-0 border-3 text-end float-end">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card w-100 rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Продукт Бета</h5>
+                                                            <img src="img/lil-banner.jpg" class="card-img-top rounded-0 border border-2 border-dark my-2" alt="...">
+                                                            <button class="btn btn-outline-dark rounded-0 border-3 text-end float-end">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--SERVICES PART 4/5-->
+                                <div class="hideshow" style="display: none" id="services-part">
+                                    <div class="col g-4 h-100">
+                                        <div class="position-relative border border-1 border-light overflow-hidden" style="height: 125px;"> <!--BANNER-->
+                                            <img src="img/lil-banner.jpg" alt="Banner" class="img-fluid">
+                                            <div class="position-absolute w-100 h-100 opacity-25" style="background: #000; left: 0; right: 0; top: 0; bottom: 0;"></div>
+                                            <div class="position-absolute w-100 h-100" style=": 0; right: 0; top: 0; bottom: 0;">
+                                                <div class="row w-100 h-100">
+                                                    <div class="col-xl-3"></div>
+                                                    <div class="col-xl-6 align-self-center" style="font-family: 'Yeseva One', cursive;">
+                                                        <h1 class="text-white text-center display-3">Axis Core</h1>
+                                                        <h3 class="text-secondary text-end text-uppercase"><span class="text-secondary text-bg-light"> c o n s t r u c t i o n </span></h3>
+                                                    </div>
+                                                    <div class="col-xl-3"></div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="row row-cols-1 mt-4 mx-auto py-2" style="font-size: 24px;">
+                                            <p class="col pb-3 pt-3 bg-white border border-2 shadow-inner" style="text-indent: 25px;">
+                                                <b>Будівництво сільськогосподарських об’єктів</b> – це комплекс робіт по зведенню холодних і теплих будівель сільськогосподарського призначення – у тому числі модульних споруд, що відрізняються коротким терміном будівництва й вимагають мінімальних витрат на зведення та обслуговування.
+                                            </p>
+                                            <p class="col pb-3 pt-3 bg-white border border-2 shadow-inner" style="text-indent: 25px;">
+                                                Це заводи по переробці сільськогосподарских культур(комбікорм, олія, крупи, борошно, посівний матеріал), заводи по глибокої переробки зерна,(спирт, біоетанол, біодизель, біогаз, глютен, лимонна кислота, крохмали та ін...) ферми, ангари для саджальної, оброблювальної, зрошувальної та збиральної техніки, склади та зерносховища, елеватори, пташники, корівники, й інші сільськогосподарські споруди – модульні та капітальні.
+                                            </p>
+                                            <p class="col pb-3 pt-3 bg-white border border-2 shadow-inner" style="text-indent: 25px;">
+                                                Завдяки тому, що в ході будівництва ми використовуємо виключно екологічні матеріали, що відповідають усім санітарним нормам, а також застосовуємо сучасні технології зведення, сільськогосподарські об’єкти від Axis Core відрізняються прийнятною ціною, найвищою якістю й зручністю експлуатації, при цьому значно зростає й швидкість будівництва, що особливо важливо у разі сезонних робіт.
+                                            </p>
+                                            <p class="col pb-3 pt-3 bg-white border border-2 shadow-inner" style="text-indent: 25px;">
+                                                Фахівці компанії Axis Core зроблять усі необхідні виміри на місцевості й у найкоротші терміни побудують потрібний об’єкт з потрібним функціоналом!
+                                            </p>
+                                            <p class="col pb-3 pt-3 bg-white border border-2 shadow-inner" style="text-indent: 25px;">
+                                                Компанія Axis Core пропонує Вам послуги генерального проектувальника та генерального підрядника в області будівництва промислових об’єктів будь-якої складності. Сьогодні, Axis Core є одним з лідерів будівництва об’єктів промислового призначення по всій території України.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--PARTNERS PART 5/5-->
+                                <div class="hideshow" style="display: none" id="partners-part">
+                                    <div class="col g-4 h-100">
+                                        <div class="position-relative border border-1 border-light overflow-hidden" style="height: 125px;"> <!--BANNER-->
+                                            <img src="img/lil-banner.jpg" alt="Banner" class="img-fluid">
+                                            <div class="position-absolute w-100 h-100 opacity-25" style="background: #000; left: 0; right: 0; top: 0; bottom: 0;"></div>
+                                            <div class="position-absolute w-100 h-100" style=": 0; right: 0; top: 0; bottom: 0;">
+                                                
+                                                <div class="row w-100 h-100">
+                                                    <div class="col-xl-3"></div>
+                                                    <div class="col-xl-6 align-self-center" style="font-family: 'Yeseva One', cursive;">
+                                                        <h1 class="text-white text-center display-3">Axis Core</h1>
+                                                        <h3 class="text-secondary text-end text-uppercase"><span class="text-secondary text-bg-light"> c o n s t r u c t i o n </span></h3>
+                                                    </div>
+                                                    <div class="col-xl-3"></div>
+                                                    
+                                                </div>
+                                                
+                                            </div>                                       
+                                        </div>
+
+                                        <!--PARTNERS SOURCE-->
+                                        <div class="mt-3" id="partners-source-1">
+                                            <div class="row row-cols-1 row-cols-xl-2 g-5">
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Фадєєв 3-5 тонн насіннєвий завод</h5>
+                                                            <div class="row row-cols-xl-2">
+                                                                <div class="col">
+                                                                    <a class="btn btn-success rounded-0 border-3 text-center w-100" href="img/company1/1.pdf" target="_blank">Приклад 1</a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <a class="btn btn-success rounded-0 border-3 text-center w-100" href="img/company1/2.pdf" target="_blank">Приклад 2</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Фадєєв 10 тонн насіннєвий завод</h5>
+                                                            <div class="row row-cols-xl-2">
+                                                                <div class="col">
+                                                                    <a class="btn btn-success rounded-0 border-3 text-center w-100" href="img/company2/1.pdf" target="_blank">Приклад 1</a>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <a class="btn btn-success rounded-0 border-3 text-center w-100" href="img/company2/2.pdf" target="_blank">Приклад 2</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Турецька компанія</h5>
+                                                            <img src="img/company3/1.jpeg" class="card-img-top rounded-0 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50" id="company3-btn">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="card rounded-0">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title text-center">Таніс</h5>
+                                                            <img src="img/company4/1.jpg" class="card-img-top rounded-0 border-dark my-2" alt="...">
+                                                            <button class="btn btn-success rounded-0 border-3 text-center float-end w-50" id="company4-btn">Перейти</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                           </div>
+                                        </div>
+
+                                        <!--COMPANY 3 EXAMPLES-->
+                                        <div class="mt-3" style="display: none" id="company3-examples">
+                                            <div class="row">
+                                                <button class="btn btn-success rounded-0 border-3 text-center mx-auto w-50" id="company3-back-btn">Назад</button>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-xl-3 pt-3 g-2">
+                                                <div class="col"><img src="img/company3/1.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/2.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/3.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/4.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/5.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/6.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/7.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/8.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/9.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/10.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/11.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/12.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/13.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/14.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/15.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/16.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/17.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/18.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/19.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/20.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/21.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/22.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/23.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/24.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/25.jpeg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company3/26.jpeg" alt="" class="img-fluid w-100"></div>
+                                            </div>
+                                        </div>
+
+                                        <!--COMPANY 4 EXAMPLES-->
+                                        <div class="mt-3" style="display: none" id="company4-examples">
+                                            <div class="row">
+                                                <button class="btn btn-success rounded-0 border-3 text-center mx-auto w-50" id="company4-back-btn">Назад</button>
+                                            </div>
+                                            <div class="row row-cols-1 row-cols-xl-3 pt-3 g-2">
+                                                <div class="col"><img src="img/company4/1.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company4/2.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company4/3.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company4/4.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company4/5.jpg" alt="" class="img-fluid w-100"></div>
+                                                <div class="col"><img src="img/company4/6.jpg" alt="" class="img-fluid w-100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--RIGHT BASE COLUMN -->
+                        <div class="hidden-onmobile col-xl-2 text-center border border-dark bg-white px-3 h-50">
+                            <div class="row row-cols-1 justify-content-center gy-5">
+                                <div class="col w-100">
+                                    <img src="img/axis_core_logo.jpg" alt="Axis Core" class="img-fluid">
+                                </div>
+                                <div class="col mt-0" style="width: 90%">
+                                    <div class="row row-cols-1 justify-content-center gy-2" id="group-btn-toggle">
+                                        <div class="col d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3 active" id="btn-main">Головна</button>
+                                        </div>
+                                        <div class="col d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-projects">Наші проекти</button>
+                                        </div>
+                                        <div class="col d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-products">Продукція</button>
+                                        </div>
+                                        <div class="col d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-services">Послуги</button>
+                                        </div>
+                                        <div class="col d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-partners">Партнери</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12" style="font-size: 15px">
+                                    <div class="row row-cols-1 justify-content-center gy-2">
+                                        <div class="col-9 d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-mail">Пошта</button>
+                                        </div>
+                                        <div class="col-9 d-grid gap-2 mx-auto">
+                                            <button class="btn btn-outline-dark rounded-0 border-3" id="btn-phone">Телефон</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col pb-3">
+                                    <div class="row justify-content-center gy-5">
+                                        <div class="col-4">
+                                            <a class="btn btn-outline-dark rounded-0 border-3" href="ru/index.html">Ru</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a class="btn btn-outline-dark rounded-0 border-3" href="#">Ua</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a class="btn btn-outline-dark rounded-0 border-3" href="en/index.html">En</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<!-- CORE PLUGINS -->
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrmS1iLjyldSGH1O5a-mMEu8DH-Hq7hyU
+    &callback=initMap">
+    </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="vendor/jquery/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+<!-- END BODY -->
+</html>
